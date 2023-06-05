@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05E13CE72A2AA0910076D4DD /* shazamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E13CE62A2AA0910076D4DD /* shazamApp.swift */; };
-		05E13CE92A2AA0910076D4DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E13CE82A2AA0910076D4DD /* ContentView.swift */; };
 		05E13CEB2A2AA0920076D4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E13CEA2A2AA0920076D4DD /* Assets.xcassets */; };
 		05E13CEF2A2AA0920076D4DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E13CEE2A2AA0920076D4DD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		05E13CE32A2AA0910076D4DD /* shazam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shazam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E13CE62A2AA0910076D4DD /* shazamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shazamApp.swift; sourceTree = "<group>"; };
-		05E13CE82A2AA0910076D4DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05E13CEA2A2AA0920076D4DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05E13CEC2A2AA0920076D4DD /* shazam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shazam.entitlements; sourceTree = "<group>"; };
 		05E13CEE2A2AA0920076D4DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				05E13CE62A2AA0910076D4DD /* shazamApp.swift */,
-				05E13CE82A2AA0910076D4DD /* ContentView.swift */,
 				05E13CEA2A2AA0920076D4DD /* Assets.xcassets */,
 				05E13CEC2A2AA0920076D4DD /* shazam.entitlements */,
 				05E13CED2A2AA0920076D4DD /* Preview Content */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05E13CE92A2AA0910076D4DD /* ContentView.swift in Sources */,
 				05E13CE72A2AA0910076D4DD /* shazamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,10 +283,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.iovasile.shazam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,10 +323,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.iovasile.shazam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
